@@ -2,7 +2,6 @@ package acuario
 
 import kotlin.math.PI
 
-// Superclase Acuario
 open class Acuario(
     open var largo: Int = 100,
     open var ancho: Int = 20,
@@ -37,7 +36,6 @@ open class Acuario(
     }
 }
 
-// Subclase TanqueTorre (cilíndrico)
 class TanqueTorre(
     override var alto: Int,
     var diametro: Int
@@ -56,7 +54,7 @@ class TanqueTorre(
 
     override fun imprimirTamaño() {
         println(forma)
-        println("El Diámetro es: $diametro cm, Alto: $alto cm")
+        println("El Diámetro es: $diametro cm, La altura es: $alto cm")
         println("El volumen es: $volumen l El Agua es: $agua l (${String.format("%.1f", agua / volumen * 100)}% lleno)")
     }
 }
